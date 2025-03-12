@@ -73,8 +73,13 @@
 }
 
 @layer utilities {
-  .header-button {
+  /* .header-button {
     @apply cursor-pointer p-1 border border-transparent hover:border-white rounded-[2px];
+  } */
+
+   /* Making border rounded on hover */
+  .header-button {
+    @apply cursor-pointer p-1 border border-transparent hover:border-[#FFFFFF] rounded-md hover:rounded-md;
   }
   .h1-bold {
     @apply font-bold text-2xl lg:text-3xl;
