@@ -4,6 +4,6 @@ export const APP_DESCRIPTION = process.env.NEXT_PUBLIC_APP_DESCRIPTION || 'Ecomm
 
 export const PRODUCT_CATEGORIES = ['men', 'women', 'kids', 'accessories'] as const
 
-export const COPYRIGHT_TEXT = '© 2000-2025, {APP_NAME}, Inc. or its affiliates'
+export const COPYRIGHT_TEXT = '© 2000-2025, {APP_NAME}, Inc'
 
 export const ADDRESS_PHONE ='123, Main Street, Anytown, CA, Zip 12345 | +1 (123) 456-7890'

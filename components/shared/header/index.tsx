@@ -16,7 +16,7 @@ export default function Header() {
             <Link
               href='/'
               // className='flex items-center header-button font-extrabold text-2xl m-1 '
-              className='flex items-center header-button font-extrabold text-2xl ml-[-0.9rem]'
+              className='flex items-center header-button font-extrabold text-2xl ml-[-6.5rem]'
             >
               <Image
                 // src='/icons/logo.svg'
@@ -38,9 +38,10 @@ export default function Header() {
         </div>
       </div>
       <div className='flex items-center px-3 mb-[1px]  bg-gray-800'>
+      {/* <div className='flex items-center px-3 mb-[1px]  bg-black'> */}
         <Button
           variant='ghost'
-          className='dark header-button flex items-center gap-1 text-base [&_svg]:size-6'
+          className='light header-button flex items-center gap-1 text-base [&_svg]:size-6'
         >
           <MenuIcon />
           All
