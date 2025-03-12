@@ -16,7 +16,7 @@ export default function Header() {
             <Link
               href='/'
               // className='flex items-center header-button font-extrabold text-2xl m-1 '
-              className='flex items-center header-button font-extrabold text-2xl ml-[-6.5rem]'
+              className='flex items-center font-extrabold text-2xl ml-[-6.5rem] py-1 px-1'
             >
               <Image
                 // src='/icons/logo.svg'
