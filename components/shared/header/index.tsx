@@ -9,7 +9,8 @@ import Search from './search'
 
 export default function Header() {
   return (
-    <header className='bg-black  text-white'>
+    // <header className='bg-black  text-white'>
+    < header className='bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white'>
       <div className='px-2'>
         <div className='flex items-center justify-between'>
           <div className='flex items-center'>
@@ -37,7 +38,9 @@ export default function Header() {
           <Search />
         </div>
       </div>
-      <div className='flex items-center px-3 mb-[1px]  bg-gray-800'>
+      {/* <div className='flex items-center px-3 mb-[1px]  bg-gray-800'> */}
+      <div className='flex items-center px-3 mb-[1px] bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800'>
+      {/* <div className='flex items-center px-3 mb-[1px] bg-gradient-to-r from-gray-900 via-black to-gray-900'> */}
       {/* <div className='flex items-center px-3 mb-[1px]  bg-black'> */}
         <Button
           variant='ghost'

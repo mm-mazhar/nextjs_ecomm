@@ -10,11 +10,13 @@ export default function Footer() {
   const formattedCopyright = COPYRIGHT_TEXT.replace('{APP_NAME}', APP_NAME)
   
   return (
-    <footer className='bg-black  text-white underline-link'>
+    // <footer className='bg-black  text-white underline-link'>
+    <footer className='bg-gradient-to-r from-gray-900 via-black to-gray-900  text-white underline-link'>
       <div className='w-full'>
         <Button
           variant='ghost'
-          className='bg-gray-800 w-full  rounded-none '
+          // className='bg-gray-800 w-full  rounded-none '
+          className='bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 w-full  rounded-none '
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           <ChevronUp className='mr-2 h-4 w-4' />
