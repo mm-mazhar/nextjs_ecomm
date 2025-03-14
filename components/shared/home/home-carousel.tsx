@@ -49,6 +49,7 @@ export function HomeCarousel({
                 />
                 <div className='absolute w-1/3 left-16 md:left-32 top-1/2 transform -translate-y-1/2'>
                   <h2 className='text-xl md:text-6xl font-bold mb-4 text-primary'>
+                  {/* <h2 className='text-xl md:text-6xl font-bold mb-4 text-white'> */}
                     {item.title}
                   </h2>
                   <Button className='hidden md:block'>
