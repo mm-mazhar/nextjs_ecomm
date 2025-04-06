@@ -7,3 +7,5 @@ export const PRODUCT_CATEGORIES = ['Marbles', 'Pottery', 'Hand Crafts'] as const
 export const COPYRIGHT_TEXT = '© 2000-2025, {APP_NAME}, Inc'
 
 export const ADDRESS_PHONE ='123, Main Street, Anytown, CA, Zip 12345 | +1 (123) 456-7890'
+
+export const PAGE_SIZE = Number(process.env.PAGE_SIZE || 9)
