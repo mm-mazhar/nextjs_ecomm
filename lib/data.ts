@@ -589,35 +589,6 @@ const products: IProductInput[] = [
     dimensions: [],
     reviews: [],
   },
-  {
-    name: "Fossil Men's Machine Stainless Steel Quartz Watch",
-    slug: toSlug("Fossil Men's Machine Stainless Steel Quartz Watch"),
-    category: 'Wrist Watches',
-    brand: 'Fossil',
-    images: ['/images/h36-1.jpg', '/images/h36-2.jpg'],
-    tags: ['best-seller', 'todays-deal'],
-    isPublished: true,
-    price: 158.21,
-    listPrice: 229.0,
-    avgRating: 3.46,
-    numReviews: 13,
-    ratingDistribution: [
-      { rating: 1, count: 1 },
-      { rating: 2, count: 2 },
-      { rating: 3, count: 3 },
-      { rating: 4, count: 4 },
-      { rating: 5, count: 3 },
-    ],
-    countInStock: 36,
-    numSales: 49,
-    description:
-      'Rug Style Table Runner, Ethnic Table Topper, Turkish Kilim Printing Aztec Collection Table Sheet, Southwestern Table Cover, Boho Table Decor',
-    sizes: [],
-    colors: [],
-    weight: [],
-    dimensions: [],
-    reviews: [],
-  },
   // Add More Products
 ]
 
