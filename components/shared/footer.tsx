@@ -1,13 +1,13 @@
 'use client'
 
-import { ADDRESS_PHONE, APP_NAME, COPYRIGHT_TEXT } from '@/lib/constants'
+import { ADDRESS_PHONE, APP_NAME, APP_COPYRIGHT } from '@/lib/constants'
 import { ChevronUp } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from '../ui/button'
 
 
 export default function Footer() {
-  const formattedCopyright = COPYRIGHT_TEXT.replace('{APP_NAME}', APP_NAME)
+  const formattedCopyright = APP_COPYRIGHT.replace('{APP_NAME}', APP_NAME)
   
   return (
     // <footer className='bg-black  text-white underline-link'>

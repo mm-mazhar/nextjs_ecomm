@@ -1,5 +1,111 @@
-import { Data, IProductInput } from '@/types'
+import { Data, IProductInput, IUserInput } from '@/types'
 import { toSlug } from './utils'
+import bcrypt from 'bcryptjs'
+
+const users: IUserInput[] = [
+  {
+    name: 'John',
+    email: 'admin@example.com',
+    password: bcrypt.hashSync('123456', 5),
+    role: 'Admin',
+    address: {
+      fullName: 'John Doe',
+      street: '111 Main St',
+      city: 'New York',
+      province: 'NY',
+      postalCode: '10001',
+      country: 'USA',
+      phone: '123-456-7890',
+    },
+    paymentMethod: 'Stripe',
+    emailVerified: false,
+  },
+  {
+    name: 'Jane',
+    email: 'jane@example.com',
+    password: bcrypt.hashSync('123456', 5),
+    role: 'Admin',
+    address: {
+      fullName: 'Jane Harris',
+      street: '222 Main St',
+      city: 'New York',
+      province: 'NY',
+      postalCode: '1002',
+      country: 'USA',
+      phone: '123-456-7890',
+    },
+    paymentMethod: 'PayPal',
+    emailVerified: false,
+  },
+  {
+    name: 'Jack',
+    email: 'jack@example.com',
+    password: bcrypt.hashSync('123456', 5),
+    role: 'User',
+    address: {
+      fullName: 'Jack Ryan',
+      street: '333 Main St',
+      city: 'New York',
+      province: 'NY',
+      postalCode: '1003',
+      country: 'USA',
+      phone: '123-456-7890',
+    },
+    paymentMethod: 'PayPal',
+    emailVerified: false,
+  },
+  {
+    name: 'Sarah',
+    email: 'sarah@example.com',
+    password: bcrypt.hashSync('123456', 5),
+    role: 'User',
+    address: {
+      fullName: 'Sarah Smith',
+      street: '444 Main St',
+      city: 'New York',
+      province: 'NY',
+      postalCode: '1005',
+      country: 'USA',
+      phone: '123-456-7890',
+    },
+    paymentMethod: 'PayPal',
+    emailVerified: false,
+  },
+  {
+    name: 'Michael',
+    email: 'michael@example.com',
+    password: bcrypt.hashSync('123456', 5),
+    role: 'User',
+    address: {
+      fullName: 'John Alexander',
+      street: '555 Main St',
+      city: 'New York',
+      province: 'NY',
+      postalCode: '1006',
+      country: 'USA',
+      phone: '123-456-7890',
+    },
+    paymentMethod: 'Stripe',
+    emailVerified: false,
+  },
+  {
+    name: 'Emily',
+    email: 'emily@example.com',
+    password: bcrypt.hashSync('123456', 5),
+    role: 'User',
+    address: {
+      fullName: 'Emily Johnson',
+      street: '666 Main St',
+      city: 'New York',
+      province: 'NY',
+      postalCode: '10001',
+      country: 'USA',
+      phone: '123-456-7890',
+    },
+    paymentMethod: 'Stripe',
+    emailVerified: false,
+  },
+]
 
 const products: IProductInput[] = [
   // T-Shirts
@@ -680,6 +786,7 @@ const data: Data = {
       },
     ],
     products,
+    users,
 
   }
   
