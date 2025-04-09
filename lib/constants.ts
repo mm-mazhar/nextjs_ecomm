@@ -10,6 +10,12 @@ export const APP_COPYRIGHT =
 
 export const ADDRESS_PHONE ='123, Main Street, Anytown, CA, Zip 12345 | +1 (123) 456-7890'
 
+export const SERVER_URL =
+  process.env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3000'
+
+export const SENDER_EMAIL = process.env.SENDER_EMAIL || 'onboarding@resend.dev'
+export const SENDER_NAME = process.env.SENDER_NAME || APP_NAME
+
 export const PAGE_SIZE = Number(process.env.PAGE_SIZE || 9)
 
 export const FREE_SHIPPING_MIN_PRICE = Number(
