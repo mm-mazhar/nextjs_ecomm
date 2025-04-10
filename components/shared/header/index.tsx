@@ -1,13 +1,14 @@
-import { Button } from '@/components/ui/button'
+import { getAllCategories } from '@/lib/actions/product.actions'
 import { APP_NAME } from '@/lib/constants'
 import data from '@/lib/data'
-import { MenuIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Menu from './menu'
 import Search from './search'
+import Sidebar from './sidebar'
 
-export default function Header() {
+export default async function Header() {
+  const categories = await getAllCategories()
   return (
     // <header className='bg-black  text-white'>
     < header className='bg-gradient-to-r from-gray-900 via-black to-gray-900 text-white'>
@@ -42,13 +43,14 @@ export default function Header() {
       <div className='flex items-center px-3 mb-[1px] bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800'>
       {/* <div className='flex items-center px-3 mb-[1px] bg-gradient-to-r from-gray-900 via-black to-gray-900'> */}
       {/* <div className='flex items-center px-3 mb-[1px]  bg-black'> */}
-        <Button
+        {/* <Button
           variant='ghost'
           className='light header-button flex items-center gap-1 text-base [&_svg]:size-6'
         >
           <MenuIcon />
           All
-        </Button>
+        </Button> */}
+        <Sidebar categories={categories} />
         <div className='flex items-center flex-wrap gap-3 overflow-hidden max-h-[42px]'>
           {data.headerMenus.map((menu) => (
             <Link

@@ -82,6 +82,9 @@
   .header-button {
     @apply cursor-pointer p-1 border border-transparent hover:border-[#FFFFFF] rounded-md hover:rounded-md;
   }
+  .item-button {
+    @apply p-3 hover:bg-muted hover:no-underline;
+  }
   .h1-bold {
     @apply font-bold text-2xl lg:text-3xl;
   }
@@ -91,5 +94,4 @@
   .flex-between {
     @apply flex justify-between items-center;
   }
-
 }
