@@ -1,6 +1,6 @@
 import { Data, IProductInput, IUserInput } from '@/types'
-import { toSlug } from './utils'
 import bcrypt from 'bcryptjs'
+import { toSlug } from './utils'
 
 const users: IUserInput[] = [
   {
@@ -874,7 +874,7 @@ const data: Data = {
         title: 'Best Deals in Marble',
         buttonCaption: 'See More',
         image: '/images/banner9.png',
-        url: '/search?category=Marble Chess Boards',
+        url: '/search?category=Marbles',
         isPublished: true,
       },
     ],
