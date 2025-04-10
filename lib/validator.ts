@@ -178,6 +178,10 @@ export const UserSignUpSchema = UserSignInSchema.extend({
   path: ['confirmPassword'],
 })
 
+export const UserNameSchema = z.object({
+  name: UserName,
+})
+
 // Cart Schema | Shipping and Payment Methods | Creating Checkout Page
 export const CartSchema = z.object({
   items: z
