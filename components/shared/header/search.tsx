@@ -1,6 +1,6 @@
 import { SearchIcon } from 'lucide-react'
 import { Input } from '@/components/ui/input'
-
+import { getAllCategories } from '@/lib/actions/product.actions'
 import {
   Select,
   SelectContent,
@@ -8,8 +8,10 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import { APP_NAME, PRODUCT_CATEGORIES } from '@/lib/constants'
+// import { APP_NAME, PRODUCT_CATEGORIES } from '@/lib/constants'
+import { APP_NAME } from '@/lib/constants'
 export default async function Search() {
+  const categories = await getAllCategories()
   return (
     <form
       action='/search'
@@ -22,7 +24,7 @@ export default async function Search() {
         </SelectTrigger>
         <SelectContent position='popper'>
           <SelectItem value='all'>All</SelectItem>
-          {PRODUCT_CATEGORIES.map((category) => (
+          {categories.map((category) => (
             <SelectItem key={category} value={category}>
               {category}
             </SelectItem>
