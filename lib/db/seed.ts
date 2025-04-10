@@ -1,10 +1,10 @@
 import data from '@/lib/data'
+import { loadEnvConfig } from '@next/env'
+import { cwd } from 'process'
 import { connectToDatabase } from '.'
 import Product from './models/product.model'
-import { cwd } from 'process'
-import { loadEnvConfig } from '@next/env'
-import User from './models/user.model'
 import Review from './models/review.model'
+import User from './models/user.model'
 
 
 loadEnvConfig(cwd())
@@ -42,6 +42,8 @@ const main = async () => {
       }
     }
     const createdReviews = await Review.insertMany(rws)
+
+    
 
     console.log({
       createdUser,
